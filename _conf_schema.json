@@ -1,17 +1,20 @@
 {
     "api": {
-        "description": "在此处添加随机图像api",
+        "description": "随机图像api",
         "type": "list",
-        "default": ["manyacg.top/setu"]
-    },
+        "hint" : "请不要直接在此处修改，请使用插件提供的命令来添加或删除api",
+        "default": [{"manyacg" : "manyacg.top/setu"}]
+        },
     "wh_list":{
-        "description": "在此处添加白名单",
+        "description": "多图图白名单",
         "type": "list",
-        "default": ["3589977813"]
+        "hint" : "配置可以使用多图图指令的用户ID",
+        "default": []
     },
     "max_num": {
-        "description": "每次请求的最大图片数量",
+        "description": "多图图最大图片数量",
         "type": "int",
+        "hint" : "默认为5,请不要设置过大,防止刷屏或被风控",
         "default": 5
     }
 }
