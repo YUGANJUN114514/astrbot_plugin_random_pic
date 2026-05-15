@@ -24,7 +24,8 @@
 
 ## 🚀 运行方法
 
-1. 将本插件放置在 AstrBot 的插件目录 `data/plugins/` 下（确保文件夹名为 `astrbot_plugin_random_pic`）。
+1. 将本插件放置在 AstrBot 的插件目录 `data/plugins/` 下（确保文件夹名为 `astrbot_plugin_random_pic`）;
+或使用`git clone https://github.com/YUGANJUN114514/astrbot_plugin_random_pic` 命令将本仓库克隆到插件目录下。
 2. 启动或重启 AstrBot。
 3. 在 AstrBot 管理面板中启用本插件，插件将会自动加载并生成默认配置。
 4. 在聊天环境中发送指令即可使用。
@@ -65,7 +66,14 @@
 - **wh_list**：允许使用 `多图图` 指令的用户 ID 白名单。
 - **max_num**：`多图图` 单次允许获取的最大图片数量（默认为 5）。
 
+---
+
+## 📝 API
+
+-使用了[ManyACG](https://manyacg.top/about/)提供的随机二次元图片服务。
+
 ## 🤔 作者的话
+
 - 这是我第一次写插件，可能还有很多不足之处，欢迎提出建议和意见。
 - 我认为这就是个屎山:(
 - 借助了ai工具，生成README.md文件，以帮助用户更好地理解和使用本插件。
