@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "wh_list":{
         "description": "多图图白名单",
         "type": "list",
@@ -9,6 +10,18 @@
         "description": "多图图群组白名单",
         "type": "list",
         "hint" : "为指定群组开启多图图命令，为空则全部群组可用多图图命令",
+=======
+    "api": {
+        "description": "随机图像api",
+        "type": "list",
+        "hint" : "请不要直接在此处修改，请使用插件提供的命令来添加或删除api",
+        "default": [{"manyacg" : "manyacg.top/setu"}]
+        },
+    "wh_list":{
+        "description": "多图图白名单",
+        "type": "list",
+        "hint" : "配置可以使用多图图指令的用户ID",
+>>>>>>> 54eae4d416e94913dab086958ca96d42761e6c73
         "default": []
     },
     "max_num": {
