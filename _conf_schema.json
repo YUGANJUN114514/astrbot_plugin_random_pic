@@ -1,17 +1,32 @@
 {
-    "api": {
-        "description": "在此处添加随机图像api",
-        "type": "list",
-        "default": ["manyacg.top/setu"]
-    },
     "wh_list":{
-        "description": "在此处添加白名单",
+        "description": "多图图白名单",
         "type": "list",
-        "default": ["3589977813"]
+        "hint" : "配置可以使用多图图指令的用户ID,留空则全部用户可用",
+        "default": []
+    },
+    "many_gr_list": {
+        "description": "多图图群组白名单",
+        "type": "list",
+        "hint" : "为指定群组开启多图图命令，为空则全部群组可用多图图命令",
+        "default": []
     },
     "max_num": {
-        "description": "每次请求的最大图片数量",
+        "description": "多图图最大图片数量",
         "type": "int",
+        "hint" : "默认为5,请不要设置过大,防止刷屏或被风控",
         "default": 5
+    },
+    "R18":{
+        "description": "全局R18开关",
+        "type": "bool",
+        "hint" : "默认为false,为false时无论是否设置R18群组模式,都不会发送R18图片",
+        "default": false
+    },
+    "R18_gr_mode":{
+        "description": "R18群组模式",
+        "type": "list",
+        "hint" : "为指定群组开启R18模式,不在列表中的群组将按照False处理,为空则全部按照全局r18开关设置获取图片",
+        "default": []
     }
 }

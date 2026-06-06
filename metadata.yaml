@@ -1,6 +1,8 @@
 name: astrbot_plugin_random_pic
 display_name: 随机图片获取
-desc: 从指定api获取随机图片
+desc: 从manyacg获取随机图片
 version: v1.0.0
 author: YUGANJUN114514
+support_platforms:
+  - aiocqhttp
 repo: https://github.com/YUGANJUN114514/astrbot_plugin_random_pic
