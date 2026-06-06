@@ -125,7 +125,7 @@ R18 模式的判断优先级如下：
 ## 🤝 其他
 
 - 本项目仅供学习交流使用，请遵守当地法律法规。
-- 使用了[manyacgapi](https://manyacg.top/about)
+- 使用了[ManyAcg API](https://manyacg.top/about)
 - 代码很烂,而且这是我第一次写项目QwQ
 - 欢迎各位大佬提出建议和意见
 - 如果你觉得这个项目对你有帮助，请给我点个star吧！（应该不会有）
