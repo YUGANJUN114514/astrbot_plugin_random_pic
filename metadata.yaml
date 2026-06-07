@@ -1,7 +1,7 @@
 name: astrbot_plugin_random_pic
 display_name: 随机图片获取
 desc: 从manyacg获取随机图片
-version: v1.0.0
+version: v1.0.1
 author: YUGANJUN114514
 support_platforms:
   - aiocqhttp

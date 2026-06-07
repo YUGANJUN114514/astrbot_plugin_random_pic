@@ -200,7 +200,7 @@ class RandomPicPlugin(Star):
                                 yield event.plain_result(f"获取图片失败喵:(\n{e}")
 
     @filter.command("多图图", alias={"duotutu", "manypic"})
-    async def 多图图(self, event: AstrMessageEvent, number: int, cr18: str = None):
+    async def 多图图(self, event: AstrMessageEvent, number: int = None, cr18: str = None):
         """获取多张图片"""
         wh_list = self.config["wh_list"]
         user_id = event.get_sender_id()
@@ -212,6 +212,9 @@ class RandomPicPlugin(Star):
         warn = 0
         urls = []
         logger.info(f"用户ID为{user_id}的用户正在尝试使用多图图命令")
+        if number == None:
+            yield event.plain_result(f"请指定要获取的图片数量喵: 0 ~ {maxnum}")
+            return
         if cr18 != None:
             if (
                 cr18 == "r18:on"
