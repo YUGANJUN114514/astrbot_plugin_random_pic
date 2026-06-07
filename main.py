@@ -252,11 +252,15 @@ class RandomPicPlugin(Star):
             if str(event.get_group_id()) not in many_gr_list:
                 yield event.plain_result("抱歉,当前群组没有权限使用多图图命令喵")
                 return
-        if number < 1:
-            yield event.plain_result("一次获取的图片数量不能少于1张喵")
-            return
-        if number > maxnum:
-            yield event.plain_result(f"一次获取的图片数量不能超过{maxnum}张喵")
+        try:
+            if number < 1:
+                yield event.plain_result("一次获取的图片数量不能少于1张喵")
+                return
+            if number > maxnum:
+                yield event.plain_result(f"一次获取的图片数量不能超过{maxnum}张喵")
+                return
+        except Exception:
+            yield event.plain_result("图片数量参数错误喵,请输入一个整数喵")
             return
         if event.get_platform_name() == "aiocqhttp":
             logger.info(
